@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+
+    <style>
+        body{
+            background-color: green;
+            
+        }
+       
+
+        #atriangle{
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-bottom: 100px solid red;
+            position: absolute;
+            margin: 10% 20% 30% 40%;
+            z-index: 3;
+        }
+
+        #btriangle{
+            top: 60px;
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-bottom: 100px solid violet;
+            position: absolute;
+            margin: 10% 20% 30% 40%;
+            z-index: 2;
+
+
+        }
+
+        #ctriangle{
+            top: 120px;
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-bottom: 100px solid blue;
+            position: absolute;
+            margin: 10% 20% 30% 40%;
+            z-index: 1;
+
+        }
+        #atriangle:hover{
+            background-color: tomato;
+        }
+
+        #ctriangle:hover{
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+   <div class="main">
+    <div id="atriangle" ></div>
+    <div id="btriangle" ></div>
+    <div id="ctriangle" ></div>
+    </div>
+
+    
+    
+</body>
+</html>
